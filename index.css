@@ -1,0 +1,119 @@
+.glow {
+  font-size: 80px;
+  font-family: 	"Lucida Handwriting", Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glow1 {
+  font-size: 40px;
+  font-family: 	"Lucida Handwriting", Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60000, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4d4d, 0 0 40px #ff4d4d, 0 0 50px #ff4d4d, 0 0 60px #f70000, 0 0 70px #ff4d4d, 0 0 80px #ee0c0c;
+  }
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 10%;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-size: 100%;
+  border-radius: 10%;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-size: 100%;
+  transform: rotateY(180deg);
+  border-radius: 10%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 5px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.grid-container1 > div {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.Video{
+  margin-left:20%;
+  border-radius: 10%;
+}
+
+.glow2 {
+  font-size: 20px;
+  font-family: 	"Lucida Handwriting", Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.audio {
+  position:center;
+  margin-top: 40%;
+}
+
+.letter{
+  margin-top: 10%;
+  margin-left: 20%;
+}
